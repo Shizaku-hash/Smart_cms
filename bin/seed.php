@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+require dirname(__DIR__) . '/app/Core/Helpers.php';
+require dirname(__DIR__) . '/database/seeders/DatabaseSeeder.php';
+
+use Database\Seeders\DatabaseSeeder;
+
+(new DatabaseSeeder())->run();
